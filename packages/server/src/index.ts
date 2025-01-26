@@ -294,7 +294,7 @@ export async function start(): Promise<void> {
     serverApp = new App()
 
     const host = process.env.HOST
-    const port = parseInt(process.env.PORT || '', 10) || 3000
+    const port = parseInt(process.env.PORT || '', 10) || 5566
     const server = http.createServer(serverApp.app)
 
     await serverApp.initDatabase()
